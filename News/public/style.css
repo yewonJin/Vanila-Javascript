@@ -1,0 +1,212 @@
+html{
+    height: 2000px;
+}
+
+body{
+    margin: 0px auto;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: hsla(210, 30%, 40%, 1);
+    color: white;
+    z-index: 1;
+}
+
+header > .header {
+    display: flex;
+    justify-content: left;
+    width: 960px;
+    height: 50px;
+    margin: 0px auto;
+}
+
+header > .header > h1 {
+    font-size: 2rem;
+    display: inline-block;
+    margin: 0px 4% 0px 4%;
+}
+
+header > .header > input {
+    margin: 10px;
+    height: 20px;
+}
+
+header > .header > nav{
+    width: 50%;
+    margin: 0px 2%;
+}
+
+header > .header > nav > .wide_ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+header > .header > nav > .wide_ul > li{
+    display: inline-block;
+    text-align: center;
+    margin: 0px;
+    padding: 10px 0px;
+    width: 15%;
+    height: 30px;
+}
+
+header > .header > nav > .wide_ul > li > a:link, :visited{
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+header > .header > nav > .wide_ul > li > a:hover{
+    cursor: pointer;
+    transition: all 0.5s ease;
+    color: #bcbcbc;
+}
+
+header > .header > nav > .narrow_ul {
+    display: none;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    padding: 10px 0px;
+    height: 30px;
+}
+
+.container{
+    position: relative;
+    margin: 0px auto;
+    top: 50px;
+    width: 960px;
+    height: 1000px;
+}
+
+.container > .narrow_menu{
+    display: none;
+    position: absolute;
+    background-color: hsla(210, 30%, 40%, 0.8);
+    width: 100%;
+    height: 500px;
+}
+
+.container > .narrow_menu.open{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container > .narrow_menu.open > div {
+    height: 10%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container > .narrow_menu.open > div > a:link, :visited{
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.container > .narrow_menu.open > div > a:hover{
+    color: #bcbcbc;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.container > main {
+    height: 90%;
+}
+
+.container > main > .main_section {
+    padding-top: 10px;
+    width: auto;
+    height: 400px;
+}
+
+.container > main > .main_section > .title {
+    display: flex;
+    width: 100%;
+    height: 40px;
+}
+
+.container > main > .main_section > .title > h2{
+    display: inline-block;
+    width: 30%;
+    margin: 0px 0px 0px 3%;
+}
+
+.container > main > .main_section > .title > .filter {
+    
+}
+
+.container > main > .main_section > .title > .content {
+
+}
+
+.container > main > .main_section > .board {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 85%;
+}
+
+.container > main > .main_section > .board > div {
+    display: inline-block;
+    border: 1px solid black;
+    width: 29%;
+    padding: 10px;
+}
+
+.container > main > .main_section > .board > div > h3 {
+    margin: 0px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.container > main > .main_section > .board > div > .content {
+    box-sizing: border-box;
+    padding: 10px;
+    height: 85%;
+}
+
+.container > main > .main_section > .board > div > .footer {
+    text-align: right;
+}
+
+
+
+
+@media all and (max-width: 960px) {
+    .container{
+        width: auto;
+    }
+}
+
+@media all and (max-width: 900px) {
+    header > .header > nav {
+        width: 10%;
+    }
+
+    header > .header{
+        width: auto;
+    }
+
+    header > .header > nav > .wide_ul{
+        display: none;
+    }
+
+    header > .header > nav > .narrow_ul{
+        display: block;
+        width: 100%;
+    }
+
+    .container{
+        width: auto
+    }
+
+}
