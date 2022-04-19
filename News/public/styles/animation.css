@@ -1,0 +1,26 @@
+@keyframes animation {
+    from{
+    }
+    to{
+        transform: translateX(-200px);
+    }
+}
+
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeout {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
