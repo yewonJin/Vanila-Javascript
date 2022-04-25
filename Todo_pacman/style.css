@@ -1,7 +1,28 @@
+@keyframes fadeout{
+    30%{
+        width: 40%;
+    }
+    40%{
+        width: 35%;
+    }
+    50%{
+        width: 30%;
+    }
+    60%{
+        width: 25%;
+    }
+    70%{
+        width: 20%;
+    }
+    100%{
+        width: 12%;
+    }
+}
+
 body{
     width: 800px;
-    margin: 0px auto;
-    background-color: #313131;
+    margin: 10px auto;
+    background-color: black;
 }
 
 .container{
@@ -9,23 +30,27 @@ body{
     height: 800px;
     margin: 0px auto;
     border: 5px double royalblue;
+    border-radius: 100px;
 }
 
 .container > .title{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
     color: goldenrod;
     text-align: center;
+    margin-top: 10px;
 }
 
 .container > .title > h1{
     margin: 0px;
-    padding: 10px;
 }
 
 .container > .content{
     box-sizing: border-box;
     width: 100%;
-    height: 90%;
+    height: 93%;
     padding: 20px;
+    padding-top: 20px;
 }
 
 .container > .content > ul{
@@ -40,7 +65,6 @@ body{
     padding: 0px;
     padding-top: 28px;
     border-top: 5px double royalblue;
-    border-bottom: 5px double royalblue;
 }
 
 .container > .content > ul > li{
@@ -53,11 +77,15 @@ body{
     color: white;
     font-size: 1.1rem;
     border: 2px dotted white;
-    
+    overflow: hidden;
 }
 
-.manual{
-    color: white;
+.container > .content > ul > .remove{
+    animation: fadeout 7s;
+}
+
+.container > .content > ul > li:first-child{
+    transform: translate(0px);
 }
 
 .pacman{
@@ -82,7 +110,7 @@ body{
     left: -5px;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-bottom: 30px solid #313131;
+    border-bottom: 30px solid black;
     transform: rotate(90deg);
 }
 
