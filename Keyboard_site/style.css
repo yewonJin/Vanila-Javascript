@@ -1,0 +1,173 @@
+body{
+    margin: 0px;
+}
+
+.container{
+    width: 100%;
+    height: 1200px;
+}
+
+.container > header{
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    color: #dddddd;
+    background-color: hsla(10, 10%, 5%, 0.8);
+    z-index: 3;
+}
+
+.container > header > .nav{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px auto;
+    width: 960px;
+    height: 100%;
+}
+
+.container > header > .nav > h3{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0px;
+    padding: 7px;
+}
+
+.container > header > .nav >.global_nav{
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container > header > .nav > .global_nav > li{
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    height: 100%;
+    width: 20%;
+    padding-top: 7px;
+    font-size: 1.2rem;
+}
+
+.container > header > .nav > .user_nav {
+    display: flex;
+    width: 8%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container > header > .nav > .user_nav > li{
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
+    padding-top: 7px;
+}
+
+.container > main{
+    position: relative;
+    box-sizing: border-box;
+    top: 40px;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+}
+
+.container > main > h2{
+    font-size: 1.7rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+}
+
+.container > main > .board{
+    position: relative;
+    width: 900px;
+    height: 500px;
+    margin: 0px auto;
+    border-radius: 10px;
+    overflow: hidden
+}
+
+
+.container > main > .board > .image{
+    transition: all 1s;
+    width: 3620px;
+    height: 100%;
+}
+
+.container > main > .board > .image > div{
+    display: inline-block;
+    position: relative;
+    width: 900px;
+    height: 100%;
+}
+
+.container > main > .board > .image > div:nth-child(1) {
+    position: relative;
+    background-image: url(./images/1.jpg);
+    background-size: 900px;
+    background-position-y: -200px;
+}
+
+.container > main > .board > .image > div:nth-child(2) {
+    position: relative;
+    background-image: url(./images/2.jpg);
+    background-size: 900px;
+    background-position-y: -200px;
+}
+
+.container > main > .board > .image > div:nth-child(3) {
+    position: relative;
+    background-image: url(./images/3.jpg);
+    background-size: 900px;
+}
+
+.container > main > .board > .image > div:nth-child(4) {
+    position: relative;
+    background-image: url(./images/4.jpg);
+    background-size: 900px;
+}
+
+.page{
+    display: inline-block;
+    position: relative;
+    top: -40px;
+    left: 390px;
+    width: 135px;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.page > li{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    border: 2px solid #cccccc;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px;
+    background-color: #dddddd;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    height: 1000px;
+    margin: 100px auto;
+}
+
+.card > div{
+    display: inline-block;
+    width: 47%;
+    height: 50%;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.card > div > h2{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
