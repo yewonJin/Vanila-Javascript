@@ -4,7 +4,7 @@ body{
 
 .container{
     width: 100%;
-    height: 1200px;
+    height: 2000px;
 }
 
 .container > header{
@@ -12,8 +12,8 @@ body{
     width: 100%;
     height: 40px;
     color: #dddddd;
-    background-color: hsla(10, 10%, 5%, 0.8);
-    z-index: 3;
+    background-color: hsla(10, 1%, 20%, 1);
+    z-index: 2;
 }
 
 .container > header > .nav{
@@ -30,10 +30,17 @@ body{
     padding: 7px;
 }
 
+.container > header > .nav > h3 > a:visited, :link{
+    color: #dddddd;
+    text-decoration: none;
+}
+
+
+
 .container > header > .nav >.global_nav{
-    font-family: 'Ubuntu', sans-serif;
     display: flex;
     justify-content: space-around;
+    font-family: 'Ubuntu', sans-serif;
     width: 35%;
     margin: 0px;
     padding: 0px;
@@ -44,14 +51,46 @@ body{
     box-sizing: border-box;
     text-align: center;
     height: 100%;
-    width: 20%;
+    width: 30%;
     padding-top: 7px;
     font-size: 1.2rem;
 }
 
+.container > header > .nav > .global_nav > li > a:visited, :link{
+    color: #dddddd;
+    text-decoration: none;
+}
+
+.container > header > .nav > .global_nav > li:hover{
+    cursor: pointer;
+    border-bottom: 2px solid white;
+
+}
+
+.container > header > .nav > .global_nav > li:hover ul{
+    display: block;
+}
+
+.container > header > .nav > .global_nav > li > ul{
+    display: none;
+    position: relative;
+    top: 10px;
+    width: 200px;
+    margin: 0px;
+    padding: 10px 0px;
+    background-color: hsla(10, 1%, 20%, 1);
+}
+
+.container > header > .nav > .global_nav > li > ul > li {
+    text-align: left;
+    padding: 5px 0px;
+    padding-left: 25px;
+    list-style: none;
+}
+
 .container > header > .nav > .user_nav {
     display: flex;
-    width: 8%;
+    width: 10%;
     margin: 0px;
     padding: 0px;
 }
@@ -59,10 +98,16 @@ body{
 .container > header > .nav > .user_nav > li{
     display: inline-block;
     box-sizing: border-box;
+    text-align: center;
     height: 100%;
     width: 50%;
     padding-top: 7px;
 }
+
+.container > header > .nav > .user_nav > li > span:hover{
+    cursor: pointer;
+}
+
 
 .container > main{
     position: relative;
@@ -70,70 +115,85 @@ body{
     top: 40px;
     width: 100%;
     height: 100%;
-    padding-top: 30px;
 }
 
 .container > main > h2{
     font-size: 1.7rem;
     font-family: 'Ubuntu', sans-serif;
-    margin: 0px 0px 20px 0px;
+    margin: 0px;
     text-align: center;
 }
 
-.container > main > .board{
+.container > main > .slider{
     position: relative;
-    width: 900px;
-    height: 500px;
+    width: 100%;
+    height: 40vw;
     margin: 0px auto;
-    border-radius: 10px;
-    overflow: hidden
+    border-radius: 0px;
+    overflow: hidden;
 }
 
 
-.container > main > .board > .image{
+
+.container > main > .slider > .image{
     transition: all 1s;
-    width: 3620px;
+    width: 100%;
     height: 100%;
 }
 
-.container > main > .board > .image > div{
+.container > main > .slider > .image > div{
+    position: absolute;
     display: inline-block;
-    position: relative;
-    width: 900px;
+    width: 100%;
     height: 100%;
 }
 
-.container > main > .board > .image > div:nth-child(1) {
-    position: relative;
-    background-image: url(./images/1.jpg);
-    background-size: 900px;
-    background-position-y: -200px;
+.container > main > .slider > .image > div:nth-child(1) {
+    position: absolute;
+    background-image: url(./images/1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-Y: 50%;
 }
 
-.container > main > .board > .image > div:nth-child(2) {
-    position: relative;
-    background-image: url(./images/2.jpg);
-    background-size: 900px;
-    background-position-y: -200px;
+.container > main > .slider > .image > div:nth-child(2) {
+    position: absolute;
+    background-image: url(./images/2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 45%;
 }
 
-.container > main > .board > .image > div:nth-child(3) {
-    position: relative;
-    background-image: url(./images/3.jpg);
-    background-size: 900px;
+.container > main > .slider > .image > div:nth-child(3) {
+    position: absolute;
+    background-image: url(./images/3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+
 }
 
-.container > main > .board > .image > div:nth-child(4) {
-    position: relative;
-    background-image: url(./images/4.jpg);
+.container > main > .slider > .image > div:nth-child(4) {
+    position: absolute;
+    background-image: url(./images/4.webp);
     background-size: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 45%;
+}
+
+.container > main > .slider > .image > div > a{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .page{
     display: inline-block;
     position: relative;
     top: -40px;
-    left: 390px;
+    left: 45%;
     width: 135px;
     padding: 0px;
     margin: 0px;
@@ -145,29 +205,89 @@ body{
     width: 15px;
     height: 15px;
     margin-right: 10px;
-    border: 2px solid #cccccc;
+    border: 2px solid #dddddd;
     border-radius: 20px;
     box-shadow: 2px 2px 5px;
-    background-color: #dddddd;
+    background-color: white;
 }
 
-.card {
-    display: flex;
-    justify-content: space-between;
-    width: 1000px;
-    height: 1000px;
-    margin: 100px auto;
+.container > main > .card{
+    width: auto;
+    height: 800px;
 }
 
-.card > div{
-    display: inline-block;
-    width: 47%;
-    height: 50%;
-    border: 2px solid grey;
-    border-radius: 10px;
-}
-
-.card > div > h2{
+.container > main > .card > h1{
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
+    font-size: 2.5rem;
+}
+
+.container > main > .card > .content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 40%;
+}
+
+.container > main > .card > .content > div{
+    display: inline-block;
+    border-radius: 10px;
+    width: 30%;
+    height: 150px;
+    background-color: hsla(30, 5%, 40%, 0.8);
+}
+
+.container > main > .card > .content > div:hover{
+    transition: all 1s;
+    cursor: pointer;
+    background-color: hsla(30, 5%, 60%, 0.8);
+}
+
+
+.container > main > .card > .content > div > h2{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.container > main > .card > .content > div:nth-child(1){
+/*     background-image: url(./images/5.webp);
+    background-size: cover;
+    background-position-x: 50%;
+ */
+}
+
+
+
+
+@media all and (min-width: 960px) {
+    .container > header > .nav{
+        width: 960px;
+    }
+}
+
+@media all and (max-width: 960px) {
+    .container > main > .card > .content > div{
+        width: 30%;
+    }
+
+}
+
+@media all and (max-width: 900px) {
+    .container > header > .nav{
+        width: auto;
+    }
+
+
+}
+
+@media all and (max-width: 750px) {
+    .container > header > .nav > .global_nav{
+        display: none;
+    }
+    .container > header > .nav > .user_nav{
+        width: 20%;
+    }
+
 }
