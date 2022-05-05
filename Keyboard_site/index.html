@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,10 +13,11 @@
             <header>
                 <div class="nav">
                     <h3><a href="">DRM</a></h3>
+                    
                     <ul class="global_nav">
                         <li><a href="">SHOP</a>
                             <ul class="menu">
-                                <li>95% Keyboard</li>
+                                <li>Full Keyboard</li>
                                 <li>80% Keyboard</li>
                                 <li>75% Keyboard</li>
                                 <li>65% Keyboard</li>
@@ -33,12 +35,40 @@
                             </ul></li>
                         <li><a href="">Support</a></li>
                     </ul>
+
+                    <div class="global_narrow_nav">
+                        <span class="material-symbols-outlined" id="menu">menu</span>
+                    </div>
+
                     <ul class="user_nav">
-                        <li><span class="material-symbols-outlined">search</span></li>
+                        <li class="search_li"><span class="material-symbols-outlined" id="search_icon">search</span>
+                            <div class="search">
+                                <input type="text">
+                            </div>
+                        </li>
                         <li><span class="material-symbols-outlined">account_circle</span></li>
                     </ul>
                 </div>
             </header>
+            <div class="global_nav_menu">
+                <ul>
+                    <h2>SHOP</h2>
+                    <li>Full Keyboard</li>
+                    <li>80% Keyboard</li>
+                    <li>75% Keyboard</li>
+                    <li>65% Keyboard</li>
+                    <li>60% Keyboard</li>
+                    <li>40% Keyboard</li>
+                </ul>
+                <ul>
+                    <h2>DIY</h2>
+                    <li>PCB</li>
+                    <li>Plate</li>
+                    <li>Housing</li>
+                    <li>Switches</li>
+                    <li>Keycaps</li>
+                </ul>
+            </div>
             <main>
                 <div class="slider">
                     <div class="image" style="transform: translateX(0px);">
@@ -47,33 +77,96 @@
                         <div style="opacity: 1; left: 200%;"><a href="#"></a></div>
                         <div style="opacity: 1; left: 300%;"><a href="#"></a></div>
                     </div>
-                    <ul class="page">
-                        <li style="background-color: grey;"></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
                 </div>
-                <div class="card">
-                    <h1>Keyboard</h1>
+                <ul class="page">
+                    <li style="background-color: white;"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="shop_Menu">
+                    <h1>SHOP</h1>
                     <div class="content">
-                        <div>
-                            <h2>FULL</h2>
-                            <div class="">
-
+                        <ul>
+                            <li>Full</li>
+                            <li>80%</li>
+                            <li>75%</li>
+                            <li>65%</li>
+                            <li>60%</li>
+                            <li>40%</li>
+                        </ul>
+                        <div class="card">
+                            <div class="full">
+                                <div style="background-image: url(./images/1.webp);">
+                                    <div class="card_top">D65 - Black</div>
+                                    <div class="card_bottom">133,000 ~</div>
+                                </div>
+                                <div style="background-image: url(./images/3.webp);">
+                                    <div class="card_top"></div>
+                                    <div class="card_bottom"></div>
+                                </div>
+                                <div style="background-image: url(./images/4.webp);">
+                                    <div class="card_top"></div>
+                                    <div class="card_bottom"></div>
+                                </div>
+                                <div style="background-image: url(./images/5.webp);">
+                                    <div class="card_top"></div>
+                                    <div class="card_bottom"></div>
+                                </div>
+                                <div style="background-image: url(./images/5.webp);">
+                                    <div class="card_top"></div>
+                                    <div class="card_bottom"></div>
+                                </div>
+                                <div style="background-image: url(./images/3.webp);">
+                                    <div class="card_top"></div>
+                                    <div class="card_bottom"></div>
+                                </div>
                             </div>
                         </div>
-                        <div><h2>TKL</h2></div>
-                        <div><h2>75%</h2></div>
-                        <div><h2>65%</h2></div>
-                        <div><h2>60%</h2></div>
-                        <div><h2>40%</h2></div>
                     </div>
-
+                </div>
+                <div class="DIY_Menu">
+                    <h1>DIY</h1>
+                    <div class="content">
+                        <ul>
+                            <li>PCB</li>
+                            <li>Plate</li>
+                            <li>Housing</li>
+                            <li>Switches</li>
+                            <li>Keycaps</li>
+                        </ul>
+                    <div class="card">
+                        <div class="full">
+                            <div style="background-image: url(./images/keycap1.webp);">
+                                <div class="card_top">D65 - Black</div>
+                                <div class="card_bottom">133,000 ~</div>
+                            </div>
+                            <div style="background-image: url(./images/keycap2.webp);">
+                                <div class="card_top"></div>
+                                <div class="card_bottom"></div>
+                            </div>
+                            <div style="background-image: url(./images/keycap3.webp);">
+                                <div class="card_top"></div>
+                                <div class="card_bottom"></div>
+                            </div>
+                            <div style="background-image: url(./images/keycap4.webp);">
+                                <div class="card_top"></div>
+                                <div class="card_bottom"></div>
+                            </div>
+                            <div style="background-image: url(./images/5.webp);">
+                                <div class="card_top"></div>
+                                <div class="card_bottom"></div>
+                            </div>
+                            <div style="background-image: url(./images/3.webp);">
+                                <div class="card_top"></div>
+                                <div class="card_bottom"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
             <footer>
-
+                All images are from https://kbdfans.com/
             </footer>
         </div>
         <script src="script.js"></script>
